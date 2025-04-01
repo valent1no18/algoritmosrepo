@@ -7,7 +7,16 @@ def producto(n,m):
     else:
         return n + producto(n, m - 1)
     
-print(producto(2,1))
+print("producto:", producto(2,1))
 
 
-#potencia(m, n)= m ** potencia(m, n - 1) --> potencia
+#potencia(m, n)= m ** potencia(m, n - 1) --> potencia(m, n) n = 1 = m
+
+def potencia(m,n):
+    
+    if n == 1:
+        return m
+    else:
+        return m * potencia(m, n - 1)
+    
+print("potencia:", potencia(2,1))
