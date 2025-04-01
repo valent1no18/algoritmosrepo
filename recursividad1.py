@@ -10,4 +10,4 @@ def producto(n,m):
 print(producto(2,1))
 
 
-#potencia(m, n)= m ** potencia(m, n - 1) --> ptencia
+#potencia(m, n)= m ** potencia(m, n - 1) --> potencia
