@@ -1,15 +1,11 @@
-def caracteres_list(string):
-    if not string:
-        return 0
+def caracteres_list(secuencia):
+    if len(secuencia) <= 1:
+        return secuencia
     else:
-        list_characters = caracteres_list(string[0])
-        return list_characters + caracteres_list(string[::-1]) 
-    
-#:: Selecciona todos los elementos de la cadena.
-#:: Omitir el índice de inicio (comienza desde el principio).
-#-1: Indica un paso de -1, lo que significa que itera a través de la cadena desde el final hacia el principio.
+        return caracteres_list(secuencia[1:]) + [secuencia[0]]
 
 
-
-
-print( caracteres_list('-/+'))
+characters = [1, 5, 8, 2]
+reversed_list = caracteres_list(characters)
+print(f'Lista original: {characters}')
+print(f'Lista revertida: {reversed_list}')
