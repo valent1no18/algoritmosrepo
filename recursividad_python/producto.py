@@ -7,6 +7,6 @@ def producto(n,m):
     else:
         return n + producto(n, m - 1)
     
-print("producto:", producto(2,1))
+print("producto:", producto(2,3))
 
 
